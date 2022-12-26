@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="lib/css/chessboard-1.0.0.css" />
     <link rel="stylesheet" href="style.css" />
+    <title>chess ai</title>
   </head>
-  <body>
-    <h1>Chess AI</h1>
+  <body style="background-color: antiquewhite">
+    <h1 style="text-align: center">chess ai</h1>
+    <span> </span>
     <div id="board" class="board"></div>
     <div class="info">
-      Search depth:
-      <select id="search-depth">
-        <option value="1">1</option>
+      search depth:
+      <select id="search-depth" class="select">
+        <option class="option" value="1">1</option>
         <option value="2">2</option>
         <option value="3" selected>3</option>
         <option value="4">4</option>
@@ -19,11 +21,11 @@
       </select>
 
       <br />
-      <span>Positions evaluated: <span id="position-count"></span></span>
+      <span>positions evaluated: <span id="position-count"></span></span>
       <br />
-      <span>Time: <span id="time"></span></span>
+      <span>time: <span id="time"></span></span>
       <br />
-      <span>Positions/s: <span id="positions-per-s"></span> </span>
+      <span>positions/s: <span id="positions-per-s"></span> </span>
       <br />
       <br />
       <div id="move-history" class="move-history"></div>
